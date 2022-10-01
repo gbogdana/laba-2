@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+header {
+    background-color:aquamarine;
+    height: 100px;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header .container .menu {
+    width: 50%; 
+    height: 50px;
+    display: flex;  
+}
+
+header .container .menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .menu ul li {
+    width: 100%;
+    height: 100%;
+    border: 2px green solid;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .container .menu ul li:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-3px);
+}
+
+header .container .menu ul li {
+    width: 100%;
+}
+
+.promo {
+    height: calc(100vh - 100px);
+    background: center / contain url("../img/main-bg.jpg");
+    position: relative;
+}
+
+.promo-flex-container {
+    position: absolute;
+    height: 500px;
+    width: 70%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.exercise {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.exercise h2 {
+    font-size: 30px;
+    text-align: center;
+    height: 1%;
+}
+
+.exercise ul {
+    height: 50%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.exercise ul li {
+    position: relative;
+    list-style-type: none;
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.exercise ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    width: 21px;
+    height: 20px;
+    background: url(../img/done.png) center center/cover no-repeat;
+}
+
+.promo-img {
+    width: 40%;
+    height: 70%;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.education {
+    height: 100vh;
+}
+
+.education .title {
+    padding-top: 20px;
+}
+
+.flex-container {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+
+
+.ntu {
+    width: 1100px;
+    height: 400px;
+    margin-right: 30px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 1300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.subtitle {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.skills .hard-skills {
+    height: 100vh;
+    width: 100%;
+}
+
+.skills .soft-skills {
+    height: 100vh;
+    width: 100%;
+}
+
+.skills-title {
+    padding: 20px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.skills-list li {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.skills-img {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.info {
+    height: 250px;
+}
+
+.info-title {
+    padding-left: 100px;
+    padding-top: 90px;
+    width: 70%;
+    font-size: 18px;
+}
+
+.fhoto {
+    position: absolute;
+    right: 140px;
+    top: 20px;
+    width: 200px;
+    float: right;
+}
+
+footer {
+    background-color: lightpink;
+    height: 100px;
+}
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    width: 50px;
+    height: 50px;
+}
+
+.github {
+    width: 50px;
+    height: 50px;
+}
+
+.telega {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer ul li {
+    width: 160px;
+    transition: 0.5s;
+}
+
+footer ul li:hover {
+    transform: scale(0.98);
+}
